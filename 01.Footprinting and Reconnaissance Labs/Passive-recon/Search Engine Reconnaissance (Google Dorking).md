@@ -33,7 +33,9 @@ Google Dorking uses advanced search operators to filter search results and find 
 ## 🎯 Practical Examples
 
 ### 🔎 Find Login Pages
-```bash
+
 site:vulnweb.com intitle:"login"
 
 <img width="714" height="424" alt="Image" src="https://github.com/user-attachments/assets/f7da8dd3-a66d-4a57-9b6a-cd31d56d9b4d" />
+
+
