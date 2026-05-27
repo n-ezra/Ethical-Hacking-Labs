@@ -55,3 +55,9 @@ site:hackthissite.org filetype:pdf
 intitle:"index of" "parent directory"
 
 <img width="712" height="611" alt="Image" src="https://github.com/user-attachments/assets/e398679a-8b8c-4759-9c75-5574dfd04ffd" />
+
+### 🔎 Find Configuration Files
+
+filetype:env DB_PASSWORD
+
+<img width="681" height="567" alt="Image" src="https://github.com/user-attachments/assets/a8adb252-ac31-48fe-a4f3-83f92bc73e5d" />
