@@ -7,6 +7,15 @@ It is an essential part of the **reconnaissance phase** in penetration testing.
 
 ---
 
+## 🎯 Learning Objectives
+
+- Understand Google Dorking
+- Learn search operators
+- Perform passive reconnaissance
+- Identify exposed public information
+
+---
+
 ## ⚠️ Disclaimer
 > This project is for educational purposes only.  
 > Do not perform these techniques on unauthorized systems. Always follow ethical hacking and legal guidelines.
@@ -27,6 +36,14 @@ Google Dorking uses advanced search operators to filter search results and find 
 | inurl:     | Search in URL                    | inurl:admin                |
 | filetype:  | Search specific file types       | filetype:pdf               |
 | cache:     | View cached version of a page    | cache:example.com          |
+
+---
+## 🌍 Real World Use Cases
+
+- Finding exposed login portals
+- Discovering public documents
+- Identifying exposed backup files
+- OSINT investigations
 
 ---
 
@@ -61,3 +78,18 @@ intitle:"index of" "parent directory"
 filetype:env DB_PASSWORD
 
 <img width="681" height="567" alt="Image" src="https://github.com/user-attachments/assets/a8adb252-ac31-48fe-a4f3-83f92bc73e5d" />
+
+---
+
+## 🛡️ Prevention Tips
+
+- Avoid exposing sensitive files
+- Disable directory listing
+- Monitor indexed pages
+- Secure admin panels
+
+---
+
+## ✅ Conclusion
+
+This lab demonstrated how Google Dorking can be used for passive reconnaissance and public information gathering during penetration testing.
