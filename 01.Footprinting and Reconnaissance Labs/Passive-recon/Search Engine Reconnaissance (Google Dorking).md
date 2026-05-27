@@ -43,3 +43,9 @@ site:vulnweb.com intitle:"login"
 inurl:admin login
 
 <img width="676" height="601" alt="Image" src="https://github.com/user-attachments/assets/a5823dd2-853d-4790-8022-6a4433a02720" />
+
+### 🔎 Find Exposed Documents
+
+site:hackthissite.org filetype:pdf
+
+<img width="697" height="634" alt="Image" src="https://github.com/user-attachments/assets/f8da9636-027f-4d97-a338-97e623a446df" />
