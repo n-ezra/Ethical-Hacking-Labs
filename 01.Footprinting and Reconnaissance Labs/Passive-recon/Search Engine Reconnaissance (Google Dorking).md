@@ -38,4 +38,8 @@ site:vulnweb.com intitle:"login"
 
 <img width="714" height="424" alt="Image" src="https://github.com/user-attachments/assets/f7da8dd3-a66d-4a57-9b6a-cd31d56d9b4d" />
 
+### 🔎 Find Admin Panels
 
+inurl:admin login
+
+<img width="676" height="601" alt="Image" src="https://github.com/user-attachments/assets/a5823dd2-853d-4790-8022-6a4433a02720" />
