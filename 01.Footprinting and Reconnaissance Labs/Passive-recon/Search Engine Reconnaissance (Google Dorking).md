@@ -49,3 +49,9 @@ inurl:admin login
 site:hackthissite.org filetype:pdf
 
 <img width="697" height="634" alt="Image" src="https://github.com/user-attachments/assets/f8da9636-027f-4d97-a338-97e623a446df" />
+
+### 🔎 Find Open Directories
+
+intitle:"index of" "parent directory"
+
+<img width="712" height="611" alt="Image" src="https://github.com/user-attachments/assets/e398679a-8b8c-4759-9c75-5574dfd04ffd" />
