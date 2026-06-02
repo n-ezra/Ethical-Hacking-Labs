@@ -1,0 +1,272 @@
+# Shodan Fundamentals and Passive Reconnaissance
+
+## Overview
+
+Shodan is a search engine designed to discover and index internet-connected devices and services. Unlike traditional search engines that focus on websites, Shodan collects information about publicly accessible servers, routers, webcams, IoT devices, industrial control systems, cloud infrastructure, and various network services.
+
+Cybersecurity professionals use Shodan for passive reconnaissance, attack surface discovery, security assessments, threat intelligence, and asset monitoring.
+
+---
+
+## Learning Objectives
+
+* Understand the fundamentals of Shodan
+* Learn passive reconnaissance techniques
+* Discover internet-facing assets
+* Analyze service banners and metadata
+* Identify exposed technologies and services
+* Perform OSINT-based asset discovery
+
+---
+
+## What is Passive Reconnaissance?
+
+Passive reconnaissance is the process of collecting information about a target without directly interacting with its systems.
+
+Shodan is considered a passive reconnaissance tool because it uses previously indexed information rather than actively scanning targets during searches.
+
+---
+
+## Key Features of Shodan
+
+### Asset Discovery
+
+Identify internet-facing devices and services.
+
+### Service Detection
+
+Discover running services and open ports.
+
+### Banner Analysis
+
+View service banners returned by servers.
+
+### Geolocation Information
+
+Identify the geographical location of assets.
+
+### SSL Certificate Information
+
+Analyze SSL/TLS certificate details.
+
+### Organization Identification
+
+Determine hosting providers and organizations.
+
+### Vulnerability Visibility
+
+View publicly available information that may indicate exposed services.
+
+---
+
+## Common Search Filters
+
+### Apache Web Servers
+
+```text
+product:"Apache httpd"
+```
+
+### Nginx Web Servers
+
+```text
+product:"nginx"
+```
+
+### Microsoft IIS Servers
+
+```text
+product:"Microsoft-IIS"
+```
+
+### HTTPS Services
+
+```text
+port:443
+```
+
+### HTTP Services
+
+```text
+port:80
+```
+
+### SSH Services
+
+```text
+port:22
+```
+
+### FTP Services
+
+```text
+port:21
+```
+
+### Search by Country
+
+```text
+country:"IN"
+```
+
+### Search by Organization
+
+```text
+org:"Amazon.com"
+```
+
+### Search by Hostname
+
+```text
+hostname:"example.com"
+```
+
+### Search by Operating System
+
+```text
+os:"Windows"
+```
+
+---
+
+## Methodology
+
+### Step 1: Access Shodan
+
+Login to the Shodan platform.
+
+### Step 2: Execute Search Queries
+
+Use search filters to identify publicly exposed assets.
+
+### Step 3: Analyze Results
+
+Review available metadata including:
+
+* IP Address
+* Open Ports
+* Hostnames
+* Service Banners
+* SSL Information
+* Geographic Location
+* Hosting Provider
+
+### Step 4: Document Findings
+
+Record observations and summarize results.
+
+---
+
+## Information Available in Shodan
+
+### Network Information
+
+* IP Address
+* ASN Number
+* ISP Details
+* Open Ports
+
+### Service Information
+
+* Running Services
+* Service Versions
+* Protocol Details
+
+### Web Information
+
+* HTTP Headers
+* Web Server Type
+* SSL Certificates
+* Website Titles
+
+### Infrastructure Information
+
+* Hosting Provider
+* Organization
+* Geographic Location
+
+---
+
+## Practical Use Cases
+
+### Asset Discovery
+
+Identify publicly accessible assets belonging to an organization.
+
+### Attack Surface Management
+
+Understand internet-exposed infrastructure.
+
+### Security Assessments
+
+Locate potentially exposed services.
+
+### Threat Intelligence
+
+Gather information about external infrastructure.
+
+### Security Monitoring
+
+Track exposed assets over time.
+
+### Research and Education
+
+Learn about internet-facing technologies and services.
+
+---
+
+## Skills Demonstrated
+
+* Passive Reconnaissance
+* Open Source Intelligence (OSINT)
+* Asset Discovery
+* Service Enumeration
+* Banner Analysis
+* Security Documentation
+* Threat Intelligence Fundamentals
+
+---
+
+## Tools Used
+
+* Shodan
+* Web Browser
+* GitHub
+* Markdown
+
+---
+
+## Learning Outcomes
+
+After completing this project:
+
+* Understood Shodan fundamentals
+* Learned passive reconnaissance methodologies
+* Performed internet asset discovery
+* Analyzed publicly available service metadata
+* Practiced cybersecurity documentation techniques
+* Improved OSINT research skills
+
+---
+
+## Ethical Considerations
+
+This project uses publicly available information indexed by Shodan.
+
+No exploitation, unauthorized access, vulnerability testing, or intrusive activities were performed.
+
+All activities were conducted for educational and defensive security purposes only.
+
+---
+
+## References
+
+* Shodan Documentation
+* OSINT Methodologies
+* Passive Reconnaissance Techniques
+* Cybersecurity Asset Discovery Practices
+
+---
+
+## Author
+N Ezra
