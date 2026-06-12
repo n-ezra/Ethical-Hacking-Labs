@@ -133,8 +133,9 @@ Nmap done: 256 IP addresses (232 hosts up) scanned in 106.80 seconds
 
 ## 📸 Screenshots
 
+<img width="515" height="286" alt="image" src="https://github.com/user-attachments/assets/ac9f9670-24e2-4c66-8b23-00456ff63ca0" />
 
-
+<img width="574" height="149" alt="image" src="https://github.com/user-attachments/assets/d9e96bea-f00e-4b63-83ab-33f3d1dafae8" />
 
 ---
 
