@@ -1,0 +1,146 @@
+# 🔍 Host Discovery (Ping Sweep) – Nmap Practical Analysis
+
+## 📌 Overview
+
+This project demonstrates **Host Discovery using Nmap Ping Sweep (-sn)** to identify active hosts within a subnet. This is a critical first step in the reconnaissance phase of penetration testing.
+
+---
+
+## 🧪 Command Executed
+
+```bash
+nmap -sn 192.168.18.1/24
+```
+
+---
+
+## 🔍 Command Breakdown
+
+| Component         | Description                                                         |
+| ----------------- | ------------------------------------------------------------------- |
+| `nmap`            | Network scanning and reconnaissance tool                            |
+| `-sn`             | Ping scan mode (disables port scanning, only discovers live hosts)  |
+| `192.168.18.1/24` | Target subnet (256 IP addresses from 192.168.18.0 – 192.168.18.255) |
+
+### 🧠 What This Command Does
+
+* Sends host discovery probes (ICMP, ARP, TCP as needed)
+* Identifies which systems are **alive (responsive)**
+* Skips port scanning for faster execution
+
+---
+
+## 📊 Scan Output (Observed)
+
+```
+Starting Nmap 7.95 at 2026-06-12 06:54 IST
+
+Nmap scan report for 192.168.18.0
+Host is up (0.52s latency)
+
+Nmap scan report for 192.168.18.1
+Host is up (0.73s latency)
+
+Nmap scan report for 192.168.18.2
+Host is up (0.17s latency)
+
+Nmap scan report for 192.168.18.11
+Host is up (0.22s latency)
+
+...
+
+Nmap scan report for 192.168.18.252
+Host is up (0.74s latency)
+
+Nmap scan report for 192.168.18.253
+Host is up (0.74s latency)
+
+Nmap scan report for 192.168.18.254
+Host is up (0.29s latency)
+
+Nmap scan report for 192.168.18.255
+Host is up (0.57s latency)
+
+Nmap done: 256 IP addresses (232 hosts up) scanned in 106.80 seconds
+```
+
+---
+
+## 📈 Result Analysis
+
+### ✅ Total IPs Scanned
+
+* **256 hosts** in the subnet
+
+### ✅ Active Hosts Identified
+
+* **232 hosts are UP**
+* Indicates a **high-density network environment**
+
+### ⏱️ Scan Duration
+
+* Completed in **106.80 seconds**
+* Efficient for a full /24 subnet sweep
+
+---
+
+## 📡 Latency Insights
+
+| Latency Range | Interpretation                                        |
+| ------------- | ----------------------------------------------------- |
+| ~0.17s        | Very fast response (likely local or low load)         |
+| ~0.22–0.29s   | Normal response                                       |
+| ~0.52–0.74s   | Higher latency (possible congestion or distant nodes) |
+
+👉 Latency reflects **network delay + system responsiveness**
+
+---
+
+## 🔎 Key Observations
+
+* Large number of active hosts → **Shared or enterprise-like network**
+* Multiple IPs responding consistently → **Stable connectivity**
+* Broadcast address (`192.168.18.255`) responding:
+
+  * May indicate **virtualized network behavior**
+  * Or **network misconfiguration**
+
+---
+
+## ⚠️ Important Considerations
+
+* ICMP-based discovery may miss hosts if blocked
+* Some systems may be alive but **stealth (no response)**
+* High host count increases **attack surface visibility**
+
+---
+
+## 🔐 Security Perspective
+
+### From an Attacker’s View:
+
+* Easy identification of live systems
+* Helps prioritize targets for deeper scans
+
+### From a Defender’s View:
+
+* Detect abnormal scanning activity
+* Restrict ICMP/TCP probes where necessary
+* Implement network segmentation
+
+---
+
+
+## 📸 Screenshots
+
+
+
+
+---
+
+## 📚 Conclusion
+
+The Nmap Ping Sweep (`-sn`) is an efficient method for quickly identifying live hosts in a network.
+In this scan, **232 active hosts** were discovered, highlighting the importance of visibility, monitoring, and segmentation in network security.
+
+---
